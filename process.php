@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name= $_POST["name"];
     $age=(int)$_POST["age"];
     $studentId=$_POST["studentId"];
-    $grades=$_POST["grades"];
+    $grades_input=$_POST["grades"];
     // convert grades to an array of float
     $grades=array_map("floatval", explode(",",$grades_input));
     // calucate the average grade
